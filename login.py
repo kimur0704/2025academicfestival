@@ -1,23 +1,18 @@
 import streamlit as st
 
-st.set_page_config(
-    page_title="로그인",
-    page_icon="🔒",
-    layout="centered"
-)
+st.set_page_config(page_title="로그인", layout="wide")
 
-st.title("🔒 로그인")
-st.markdown("학번과 비밀번호를 입력하세요.")
+st.title("로그인")
+st.write("ID와 PW를 입력하세요.")
 
-student_id = st.text_input("학번", placeholder="학번을 입력하세요")
-password = st.text_input("비밀번호", type="password", placeholder="비밀번호를 입력하세요")
+user_id = st.text_input("ID")
+user_pw = st.text_input("PW", type="password")
 
 if st.button("로그인"):
-    if student_id and password:
-        st.success(f"학번: {student_id}\n비밀번호: {password}")
-        # 실제 로그인 처리 로직은 여기에 추가
+    if user_id and user_pw:
+        st.success(f"ID: {user_id}\nPW: {user_pw}")
     else:
-        st.error("학번과 비밀번호를 모두 입력하세요.")
-        
+        st.error("ID와 PW를 모두 입력하세요.")
+    
 
 
