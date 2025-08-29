@@ -8,7 +8,7 @@ for key in ["logged_in", "seat", "show_seat_select"]:
 
 # 로그인
 if not st.session_state.logged_in:
-    st.title("로그인")
+    st.title("숙명여자대학교 도서관 좌석 추천 시스템 로그인")
     user_id = st.text_input("ID")
     user_pw = st.text_input("PW", type="password")
 
@@ -194,4 +194,5 @@ if st.session_state.logged_in:
                 st.write('좌석 번호: ',selected)
         if st.button("예약하기"):
             st.success(f"✅️예약이 완료되었습니다!")
+
 
