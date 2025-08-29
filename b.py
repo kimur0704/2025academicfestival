@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="해당하는 항목을 입력하시면 좌석을 추천해드려요:)", layout="wide")
+st.set_page_config(page_title="숙명여자대학교 좌석 추천 시스템", layout="wide")
 
 for key in ["logged_in", "seat", "show_seat_select"]:
     if key not in st.session_state:
@@ -20,7 +20,7 @@ if not st.session_state.logged_in:
             st.error("ID와 PW를 모두 입력하세요.")
 
 if st.session_state.logged_in:
-    st.title("숙명여자대학교 중앙도서관 좌석 추천")
+    st.title("해당하는 항목을 입력하시면 도서관 좌석을 추천해드려요:)")
 
     talk = st.checkbox("대화 허용")
     typing = st.checkbox("타이핑 허용")
@@ -194,6 +194,7 @@ if st.session_state.logged_in:
                 st.write('좌석 번호: ',selected)
         if st.button("예약하기"):
             st.success(f"✅️예약이 완료되었습니다!")
+
 
 
 
