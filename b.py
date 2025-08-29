@@ -5,9 +5,7 @@ st.set_page_config(page_title="숙명여자대학교 좌석 추천 시스템", l
 for key in ["logged_in", "seat", "show_seat_select"]:
     if key not in st.session_state:
         st.session_state[key] = False if key != "seat" else ""
-st.image={
-        r"academicfestimage/logo.png"
-    }
+
 # 로그인
 if not st.session_state.logged_in:
     st.title("숙명여자대학교 도서관 좌석 추천 시스템 로그인")
@@ -196,6 +194,7 @@ if st.session_state.logged_in:
                 st.write('좌석 번호: ',selected)
         if st.button("예약하기"):
             st.success(f"✅️예약이 완료되었습니다!")
+
 
 
 
