@@ -42,35 +42,35 @@ if st.session_state.logged_in:
 
         seat_images = {
             "🛋️ 1층 신한로비": [
-                r"C:\Users\User\1sh.jpg"
+                r"academicfestimage/1sh.jpg"
             ],
             "🌞 세계여성문학관": [
-                r"C:\Users\User\1sym.jpg"
+                r"academicfestimage/1sym.jpg"
             ],
             "💡 2층 DICA 플라자 또는 SMART 플라자 양끝 1인석": [
-                r"C:\Users\User\2dica.jpg",
-                r"C:\Users\User\2smart.jpg"
+                r"academicfestimage/2dica.jpg",
+                r"academicfestimage/2smart.jpg"
             ],
             "📘 3층 자료실 A 또는 B 또는 6층 S4열람실": [
-                r"C:\Users\User\3A.jpg",
-                r"C:\Users\User\3B.jpg",
-                r"C:\Users\User\6s4.jpg"
+                r"academicfestimage/3A.jpg",
+                r"academicfestimage/3B.jpg",
+                r"academicfestimage/6s4.jpg"
             ],
             "📚 4층 자료실": [
-                r"C:\Users\User\4.jpg"
+                r"academicfestimage/4.jpg"
             ],
             "🍽️ 5층 C.C 플라자": [
-                r"C:\Users\User\5cc.jpg"
+                r"academicfestimage/5cc.jpg"
             ],
             "🔕 6층 S1~S3열람실": [
-                r"C:\Users\User\6s1.jpg",
-                r"C:\Users\User\6s2.jpg",
-                r"C:\Users\User\6s3.jpg"
+                r"academicfestimage/6s1.jpg",
+                r"academicfestimage/6s2.jpg",
+                r"academicfestimage/6s3.jpg"
             ],
             "🪑 2층 일반 열람석 또는 5층 C.C 플라자": [
-                r"C:\Users\User\2dica.jpg",
-                r"C:\Users\User\2smart.jpg",
-                r"C:\Users\User\5cc.jpg"
+                r"academicfestimage/2dica.jpg",
+                r"academicfestimage/2smart.jpg",
+                r"academicfestimage/5cc.jpg"
             ]
         }
 
@@ -194,3 +194,4 @@ if st.session_state.logged_in:
                 st.write('좌석 번호: ',selected)
         if st.button("예약하기"):
             st.success(f"✅️예약이 완료되었습니다!")
+
